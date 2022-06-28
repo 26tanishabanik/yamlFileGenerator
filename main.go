@@ -5,7 +5,7 @@ import (
 	"html/template"
 	"net/http"
 	"strconv"
-	"yamlFileGenerator/Pods"
+	"github.com/26tanishabanik/yamlFileGenerator/Pods"
 	// "fyne.io/fyne/v2"
 	// "fyne.io/fyne/v2/app"
 	// "fyne.io/fyne/v2/canvas"
