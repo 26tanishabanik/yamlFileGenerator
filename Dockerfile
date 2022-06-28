@@ -2,14 +2,14 @@ FROM golang:1.18
 
 RUN go install gopkg.in/yaml.v2
 
-RUN mkdir /work
+RUN mkdir /app
 
-ADD . /work
+ADD . /app
 
-WORKDIR /work
+WORKDIR /app
 
-RUN go build -o app ./gui/app.go
+RUN go build -o main
 
 EXPOSE 8080
 
-CMD ["/work/gui/app"]
+CMD ["/app/main"]
