@@ -335,7 +335,7 @@ import (
 var tpl *template.Template
 
 func init() {
-	tpl = template.Must(template.ParseGlob("/home/tanisha/Desktop/Projects/yamlFileGenerator/templates/*.gohtml"))
+	tpl = template.Must(template.ParseGlob("/app/templates/*.gohtml"))
 }
 
 func main() {
