@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yamlgen-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yamlgen
+  template:
+    metadata:
+      labels:
+        app: yamlgenpod
+    spec:
+      containers:
+        - name: backend-container
+          image: 26tanishabanik/yamlgen:v1
+          ports:
+            - containerPort: 8080
