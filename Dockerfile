@@ -1,6 +1,6 @@
 FROM golang:1.18
 
-RUN go install gopkg.in/yaml.v2
+RUN go install gopkg.in/yaml.v2@latest
 
 RUN mkdir /app
 
